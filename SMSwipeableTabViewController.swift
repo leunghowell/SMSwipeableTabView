@@ -239,6 +239,8 @@ public class SMSwipeableTabViewController: UIViewController, UIPageViewControlle
                     if let alpha = attributes[SMAlphaAttribute] as? CGFloat {
                         segmentButton.alpha = alpha
                     }
+                    
+                    buttons[0].setTitleColor(selectionBarAttributes?[SMBackgroundColorAttribute] as? UIColor, forState: UIControlState.Normal)
                 }
                 
                 segmentBarView.addSubview(segmentButton)
